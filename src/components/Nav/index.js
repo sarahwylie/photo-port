@@ -15,21 +15,21 @@ function categorySelected(name) {
     console.log(`${name} clicked`)
 }
     return (
-        <header>
+        <header className="flex-row px-1">
             <h2>
-                <a href="/">
+                <a data-testid="link" href="/">
                     <span role="img" aria-label="camera">📸</span> Oh Snap!
                 </a>
             </h2>
             <nav>
                 <ul className="flex-row">
                     <li className="mx-2">
-                        <a href="#about">
+                        <a data-testid="about" href="#about" onClick={() => handleClick("About")}>>
                             About me
                         </a>
                     </li>
                     <li>
-                        <span>Contract</span>
+                        <span onClick={() => handleClick('Contact')}>Contract</span>
                     </li>
                     {categories.map((category) => (
                         <li className="mx-1" key={category.name}>
