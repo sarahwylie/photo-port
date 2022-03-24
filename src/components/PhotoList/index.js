@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
-import Modal from '../Modal';
+import React, { useState } from 'react'
+import Modal from '../Modal'
 
 const PhotoList = ({ category }) => {
-    const [isModalOpen, setIsModalOpen] = useState(false);
-    const [currentPhoto, setCurrentPhoto] = useState();
+  const [isModalOpen, setIsModalOpen] = useState(false)
+  const [currentPhoto, setCurrentPhoto] = useState()
 
     const [photos] = useState([
         {
@@ -128,4 +128,4 @@ const PhotoList = ({ category }) => {
     )
 }
 
-export default PhotoList;
+export default PhotoList
