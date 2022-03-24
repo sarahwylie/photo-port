@@ -117,7 +117,7 @@ const PhotoList = ({ category }) => {
                         <p>{image.name}</p>
                     <img
                         
-                        src={require(`../../assets/small/${category}/${i}.jpg`).default}
+                        src={require(`../../assets/small/${category}/${i}.jpg`)}
                         alt={image.name}
                         className="img-thumbnail mx-1"
                         onClick={()=>toggleModal(image, i)}
